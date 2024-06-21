@@ -22,6 +22,9 @@ const Header = () => {
             ))}
           </div>
         </nav>
+        <a href="#signup" className="button">
+          Sign Up
+        </a>
       </div>
     </header>
   );
