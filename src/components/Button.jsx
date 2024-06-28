@@ -1,4 +1,5 @@
 import ButtonSvg from "../assets/svg/ButtonSvg";
+// eslint-disable-next-line no-unused-vars
 const Button = ({ className, href, onClick, children, px, white }) => {
   const classes = `button relative items-center inline-flex justify-center h-11 transition-colors hover:text-color-1 ${
     px || "px-7"
