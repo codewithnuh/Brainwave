@@ -8,9 +8,10 @@ import { useState } from "react";
 const Header = () => {
   const pathname = useLocation();
   // eslint-disable-next-line no-unused-vars
-  const [openNavigation, setOpenNavigation] = useState(true);
+  const [openNavigation, setOpenNavigation] = useState(false);
   const handleToggleNavigation = () => {
     setOpenNavigation(!openNavigation);
+    console.log(openNavigation);
   };
   return (
     <header
@@ -47,7 +48,7 @@ const Header = () => {
         </Button>
         <Button
           className={"ml-auto lg:hidden"}
-          handleCLick={handleToggleNavigation}
+          onClick={handleToggleNavigation}
         >
           <MenuSvg openNavigation={openNavigation} />
         </Button>
